@@ -13,11 +13,10 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
 </head>
 
 <body>
-
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-view">
             <button type="button" class="button-close-modal" data-modal-close>
@@ -25,12 +24,55 @@
                     <use href="./images/icon/icons.svg#icon-Vector-1"></use>
                 </svg>
             </button>
+    
+    <div class="modal-form">
+            <form name="modal-form" class="form-order" >
+                
+                <h3 class="form-order-name">Залиште свої дані, ми вам передзвонимо</h3>
+                
+                <label for="name" class="form-label">Ім'я</label>
+                <div class="form-field">
+                    <input id="name" name="name" type="text" class="form-input">
+                    <svg width="12px" height="12px" class="form-icon">
+                        <use href="./images/icon/icons.svg#icon-men"></use>
+                    </svg>
+                </div>
+                
+                <label for="tel" class="form-label">Телефон</label>
+                <div class="form-field">
+                    <input id="tel" name="telefon" type="text" class="form-input">
+                    <svg width="13px" height="13px" class="form-icon">
+                        <use href="./images/icon/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <label for="email" class="form-label">Пошта</label>
+                <div class="form-field">
+                    <input id="email" name="email" type="text" class="form-input">
+                    <svg width="15px" height="12px" class="form-icon">
+                        <use href="./images/icon/icons.svg#icon-konvert"></use>
+                    </svg>
+                    </div>
+                <label for="comment" class="form-label">Коментар</label>
+                <textarea name="commentation" id="comment" class="form-textarea" placeholder="Введіть текст"
+                    ></textarea>
+                <input id="check" type="checkbox" name="check" class="checkbox-original">
+                <svg width="16px" height="15px" class="checkbox-custom">
+                    <use href="./images/icon/icons.svg#icon-check"></use>
+                </svg>
+                <label for="check" class="checkbox-label">
+                    Погоджуюся з розсилкою та приймаю 
+                    <a class="conditions" href="#">Умови договору</a> 
 
+                </label>
+                
+                <button type="submite" class="form-button">Відправити</button>
+    
+            </form>
         </div>
-
+        </div>
     </div>
 
-    <header class="header">
+        <header class="header">
         <div class="container-header">
             <nav class="header-nav">
                 <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
@@ -55,7 +97,8 @@
         </div>
     </header>
     <main>
-
+ 
+    
 
         <section class="hero-background section">
             <div class="container">
@@ -393,9 +436,25 @@
                     </ul>
                 </div>
             </div>
+            <div class="subscription">
+                <h4 class="connecting">Підпишіться на розсилку</h4>
+                <div class="subscription-bar">
+                <input type="email" placeholder="E-mail" class="subscription-email">
+                <button type="submit" class="subscription-button">
+                    Підписатися
+                    <svg width="24px" height="24px" class="subscription-icon">
+                        <use href="./images/icon/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </div>
+                
+            </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+   
+
+<script src="./js/modal.js"></script>
+   
 </body>
 
 </html>
